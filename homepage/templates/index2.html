@@ -1,0 +1,415 @@
+{% load static %}
+{% load embed_video_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'index2.css' %}">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body style="background-image: url('{% static 'andrea.jpg' %}');background-repeat: no-repeat; background-size: cover;height:200vh;">
+       <!-- navbar -->
+       <nav class="navbar navbar-expand-lg navbar-light ">
+        <a style="width: 25%;" class="navbar-brand" href="#"><img style="width: 55%;" src="{% static 'BRI123.png' %}" alt="error"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                COURSE
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item text-info" href="#">ENGLISH</a>
+                <a class="dropdown-item text-info" href="#">ENGLISH</a>
+                <a class="dropdown-item text-info" href="#">ENGLISH</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">LIVE STREAM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><BUtton class="btn btn-info">LOG IN</BUtton></a>
+              </li>
+            
+          </ul>
+        </div>
+      </nav>
+      <!-- navbar -->
+      <!-- first_content -->
+      <div class="col-md-12 first_content">
+          <div class="row">
+              <div class="col-md-6 ml-4">
+                <h1 class="logtext" >ORGANIZED TO BOOST A STUDENT LIKES AND <span class="text-info logtext">CREATIVITIES</span> </h1>
+                <p class="text_1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam aliquid deserunt cum corrupti provident? Enim, libero. Eligendi dolores nostrum veniam fuga perspiciatis  Animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni repudiandae, veniam fugit voluptatem enim eveniet pariatur ullam possimus delectus maxime quasi architecto perspiciatis accusamus deleniti fugiat libero neque itaque reprehenderit.</p>
+                  
+                    <button class="btn btn-info">Register Now</button>
+              </div>
+          </div>
+      </div>
+      <!-- first_content -->
+      <!-- second_section -->
+      <div class="col-md-12 col-12 second_section" style="background-image: url('{% static 'girl.jpg' %}');background-repeat: no-repeat; background-size: cover;height:200vh;">
+       <div class="row">
+           <div class="col-md-6 second_content ml-4">
+            <h4 style="font-weight: 700;">BRITISH ACADEMY</h4>
+            <P class="text_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laborum ab culpa natus officiis tempore, placeat optio! Porro, maxime aspernatur dignissimos doloribus qui perferendis harum amet labore iure aliquid soluta.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit <span id="dots">...</span> <span id="more"> Deserunt, delectus. Sed ea veritatis exercitationem dolores dolorum, qui, minima voluptatibus facilis provident nam laudantium illum fugiat dolorem pariatur, tempora explicabo impedit Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati numquam consequatur modi voluptatibus neque doloremque, sequi, minus tempora nisi totam voluptas ullam quae provident ipsam quia repellat aliquid nobis ducimus. !</span>
+            </P>
+            <button type="button" id="read" onclick="read()" class="btn btn-info ">READ MORE</button>
+           </div>
+           <div class="col-md-10 col-sm-12 bg_shade">
+               <div class="text-center mt-5">
+                <h3 style="color:#fff;font-weight: bold;">WHY CHOOSE BRITISH ACADEMY</h3>
+                
+               </div>
+               <div class="row ">
+                <div class="col-md-6 col-sm-12 col-12 bg_left mt-3">
+                    
+                    <div class="row">
+                        <div class="col-md-1 ml-4"><i style="font-weight: 900;color:#fff;" class="far fa-circle "></i></div>
+                        <div class="col-md-10 col-sm-12 col-12" >
+                            <p style="font-weight: 900;color:#fff;">Skilled and certified trainers available round the clock.</p>
+                        </div>
+                    
+                          
+                        <div class="col-md-1 ml-4"><i style="font-weight: 900;color:#fff;" class="far fa-circle "></i></div>
+                        <div class="col-md-10 col-sm-12 col-12">
+                            <p style="font-weight: 900;color:#fff;">One interactive session with the Trainers.</p>
+                        </div>
+
+                       </div>
+
+
+
+                    
+                </div>
+               <div class="col-md-6 col-sm-12 col-12 bg_right  mt-3">
+                   <div class="row">
+                    <div class="col-md-1"><i style="font-weight: 900;color:#fff;" class="far fa-circle "></i></div>
+                    <div class="col-md-11 col-sm-12 col-12">
+                        <p style="font-weight: 900;color:#fff;">Coustamizable courses to meet student specific demands.</p>
+                    </div>
+                
+                    <div class="col-md-1  "><i style="font-weight: 900;color:#fff;" class="far fa-circle "></i></div>
+                    <div class="col-md-10 col-sm-12 col-12">
+                        <p style="font-weight: 900;color:#fff;">III levels of training distinctively designed to cater to <br>Basic
+                            Moderate and Advance Level students.</p>
+                    </div>
+                   </div>
+                
+                
+                </div>
+               </div>
+            
+           </div>
+       </div>
+      </div>
+      <!-- second_section -->
+      <!-- third-section -->
+      <div  class="col-md-12 col-sm-12 col-12 third_section">
+        <div class="row justify-content-center">
+              <div style="background-color: rgb(243, 242, 240);height: 250px;" class="col-md-3 col-sm-6 col-12 m-2" id="person_box">
+                <h2 class="text-center logtext">About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque accusantium vel delectus facilis facere animi doloribus aperiam, aspernatur minima placeat consequuntur quos officia incidunt eaque vero dicta? Perspiciatis, excepturi voluptatum.</p>
+              </div>
+              <div style="background-color: rgb(243, 242, 240);height: 250px;" class="col-md-3 col-sm-6 col-12 m-2" id="person_box">
+                <h2 class="text-center logtext">Features</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque accusantium vel delectus facilis facere animi doloribus aperiam, aspernatur minima placeat consequuntur quos officia incidunt eaque vero dicta? Perspiciatis, excepturi voluptatum.</p>
+              </div>
+              <div style="background-color: rgb(243, 242, 240);height: 250px;" class="col-md-3 col-sm-6 col-12 m-2" id="person_box">
+                <h2 class="text-center logtext">Service</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque accusantium vel delectus facilis facere animi doloribus aperiam, aspernatur minima placeat consequuntur quos officia incidunt eaque vero dicta? Perspiciatis, excepturi voluptatum.</p>
+              </div>
+        </div>
+      </div>
+      <!-- third-section -->
+      <!-- fourth_section -->
+      <div  class="col-md-12 col-sm-12 col-12 fouth_sectin">
+          <div class="text-center">
+          <h2 style="font-weight: 700;">OUR POPULAR COURSES</h2>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-6 col-sm-8 col-12">
+               <div class="col-md-7 col-sm-9 col-12 ml-auto mt-5 container">
+                       <!-- image -->
+ 
+                  <img class="col-md-12 col-sm-12 col-12 image" src="{% static '1.jpg' %}" alt="">
+                  <div class="overlay">
+                    <div class="text">BASIC LEVEL</div>
+                  </div>
+                     <!-- image -->
+                 </div>
+                        <div class="col-md-7 col-sm-9 col-12 ml-auto mt-5 container">
+                           <!-- image -->
+                            <img class="col-md-12 col-sm-12 col-12 image" src="{% static '2.jpg' %}" alt="">
+                             <!-- image -->
+                            <div class="overlay">
+                    <div class="text">ADVANCE LEVEL</div>
+                  </div>
+                         </div>
+              </div>
+                        <div class="col-md-6 col-sm-8 col-12">
+                            <div class="col-md-7 col-sm-7 col-9 mr-auto mt-5 container">
+                               <!-- image -->
+                               <img class="col-md-12 col-sm-12 col-12 image" src="{% static '3.jpg' %}" alt="">
+                                 <!-- image -->
+                                 <div class="overlay">
+                                    <div class="text">MODERATE LEVEL</div>
+                                  </div>
+                           </div>
+                               <div class="col-md-7 col-sm-9 col-12 mr-auto mt-5 container">
+                                     <!-- image -->
+                                  <img class="col-md-12 col-sm-12 col-12 image" src="{% static '4.jpg' %}" alt="">
+                                 <!-- image -->
+                                 <div class="overlay">
+                                    <div class="text">HIGH LEVEL</div>
+                                  </div>
+                               </div>
+                            </div>
+                  </div>
+                </div>
+
+        <!-- fourth_section -->
+        <!-- fifth section -->
+        <div style="background-color:rgb(139, 215, 235);" class="col-md-12 col-12 col-sm-12 d-none d-sm-none d-md-block fifth_section">
+            <h3 class="text-center logtext">BRITISH ACADEMY PROVIDES</h3>
+            <div class="row justify-content-center">
+              
+                 <div style="background-color:#fff;height: 340px;margin: 3rem;" id="person_box" class="col-md-2 col-sm-6 col-6">
+                  
+                     <div class="text-center ">
+                        <img class="col-md-6 col-sm-8 col-10 rounded-circle mx-auto" src="{% static '124.jpg' %}" alt="">
+                        <p>ARUNDEV</p>
+                        <small>CEO</small>
+                        <P id="person">Lorem ipsum dolor sit amet consectetur adipisicing elit. A vel consequatur eos sit quaerat! Sunt quae culpa est nobis iure quia quis excepturi accusantium ut rerum? Iste labore quam laudantium.</P>
+                     </div>
+                 </div>
+                 <div style="background-color:#fff;height: 340px;margin: 3rem;" id="person_box" class="col-md-2 col-sm-6 col-6">
+                    <div class="text-center">
+                        <img class="col-md-6 col-sm-8 col-10 rounded-circle mx-auto" src="{% static '124.jpg' %}" alt="">
+                        <p>ARUNDEV</p>
+                        <small>CEO</small>
+                        <P id="person">Lorem ipsum dolor sit amet consectetur adipisicing elit. A vel consequatur eos sit quaerat! Sunt quae culpa est nobis iure quia quis excepturi accusantium ut rerum? Iste labore quam laudantium.</P>
+                     </div>
+                 </div>
+                 <div style="background-color:#fff;height: 340px;margin: 3rem;" id="person_box" class="col-md-2 col-sm-6 col-6">
+                    <div class="text-center">
+                        <img class="col-md-6 col-sm-8 col-10 rounded-circle mx-auto" src="{% static '124.jpg' %}" alt="">
+                        <p>ARUNDEV</p>
+                        <small>CEO</small>
+                        <P id="person">Lorem ipsum dolor sit amet consectetur adipisicing elit. A vel consequatur eos sit quaerat! Sunt quae culpa est nobis iure quia quis excepturi accusantium ut rerum? Iste labore quam laudantium.</P>
+                     </div>
+                 </div>
+                 <div style="background-color:#fff;height: 340px;margin: 3rem;" id="person_box" class="col-md-2 col-sm-6 col-6">
+                    <div class="text-center">
+                        <img class="col-md-6 col-sm-8 col-10 rounded-circle mx-auto" src="{% static '124.jpg' %}" alt="">
+                        <p>ARUNDEV</p>
+                        <small>CEO</small>
+                        <P id="person">Lorem ipsum dolor sit amet consectetur adipisicing elit. A vel consequatur eos sit quaerat! Sunt quae culpa est nobis iure quia quis excepturi accusantium ut rerum? Iste labore quam laudantium.</P>
+                     </div>
+                 </div>
+          </div>
+       </div>
+    
+        <!-- fifth section -->
+        <!-- sixth_section -->
+        <div style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 100%),url('{% static 'learning1.jpg' %}');height: 550px;margin-top:250px;" class="col-md-12 col-sm-12 container-fluid col-12">
+            <div class="row">
+               <div class="col-md-7 col-sm-7 d-none d-sm-block">
+                  <div class="col-md-8 col-sm-8 enquiry_section">
+                    <button class="btn btn-info" id="enquirybtn">ENQUIRY NOW</button>
+                    <h4 class="mt-4 text-white">Learning with british academy for <br>A new joining</h4>
+                    <p class="enquirycontent text-white" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt assumenda illo, tempora corporis distinctio incidunt quibusdam quod. Esse architecto sapiente accusantium expedita nisi! Ex ullam perferendis commodi explicabo distinctio repellat!</p>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-4 col-12 login">
+                <div style="background-color: #fff; height: 500px;" class="col-md-11 col-sm-11 col-12 log_section">
+                    <div class="col-md-10 col-sm-10 col-12 log_content" style="height: 400px;">
+                      <h1 class="logtext text-center" style="margin-top: 5px;">LET'S GET IN TOUCH</h1>
+                      <p class="text-center">its high time for time</p>
+                      <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                         
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <button type="submit" class="btn btn-info btn-block mt-3">Submit</button>
+                      </form>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    
+         <!-- sixth_section -->
+         <!-- video_section -->
+         
+         <div style="background-color: rgb(100, 163, 163); height: 800px;" class="col-md-12 col-sm-12 col-12 video_page">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="col-md-10 vide_section">
+                   
+                    </div>
+                  </div>
+                  <div class="col-md-6 rght_vdo">
+                       <h3 style="font-weight: 700;">How to speak fluently <br>English</h3>
+                       <p class="vdo_content">Learn To Speak English Confidence In This Section</p>
+                       <p>Do you feel shy or nervous speaking English</p>
+                       <p>learn to sound and feel more confident in your English</p>
+                       <button style="cursor: none;" class="btn btn-info" >Watch Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 vdosec_2 " >
+           
+                {% for x in video %}
+         
+
+            
+                 
+            {% video x.video '200x200' %}
+              
+              
+                    {% endfor %}
+            
+               
+               
+              </div>
+            </div>
+          
+          </div>
+
+           <!-- video_section -->
+       <!-- students comment section -->
+<div class="col-md-12 col-sm-12 col-12 studentsectin d-none d-sm-block">
+    <h2 class="text-center">Our students Say</h2>
+    <div class="row">
+      <div class="col-md-6 col-sm-6 col-8">
+       <div class="col-md-10 col-sm-10 col-12 stu_1" style="background-color: #fff;">
+             <div class="row">
+               <div class="col-md-4 col-sm-4 col-6">
+                <div class="text-center">
+                  <img class="col-md-8 " src="{% static '124.jpg' %}" alt="">
+                  <p>ARUNDEV</p>
+                </div>
+               </div>
+               <div class="col-md-8 col-sm-6 col-8 stuRate">
+                <span class="fa fa-star" id="checked"></span>
+                <span class="fa fa-star" id="checked"></span>
+                <span class="fa fa-star" id="checked"></span>
+                <span class="fa fa-star"id="checked"></span>
+                <span class="fa fa-star"></span>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam itaque blanditiis provident ipsa. Doloremque excepturi velit asperiores ut autem sequi ad</p>
+               </div>
+             </div>
+       </div>
+      </div>
+      <div class="col-md-6 col-sm-6 col-8">
+        <div class="col-md-10 col-sm-10 col-12 stu_1" style="background-color: #fff;">
+          <div class="row">
+            <div class="col-md-4 col-sm-4 col-4">
+             <div class="text-center">
+               <img class="col-md-8 col-sm-8 col-10 " src="{% static '124.jpg' %}" alt="">
+               <p>ARUNDEV</p>
+             </div>
+            </div>
+            <div class="col-md-8 col-sm-8 col-10 stuRate">
+             <span class="fa fa-star " id="checked"></span>
+             <span class="fa fa-star " id="checked"></span>
+             <span class="fa fa-star " id="checked"></span>
+             <span class="fa fa-star"></span>
+             <span class="fa fa-star"></span>
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam itaque blanditiis provident ipsa. Doloremque excepturi velit asperiores ut autem sequi ad</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- students comment section --> 
+  <!-- footer -->
+<footer>
+    <div class="col-md-12 col-sm-10 col-12 footer">
+      <div class="row justify-content-center">
+        <div class="col-md-2 col-sm-2 col-6  ">
+       
+            <h3 class="logtext foot_text">Quick Link</h3>
+            <p>Home</p>
+            <p>About Us</p>
+            <p>Course</p>
+            <p>Live Stream</p>
+            <p>Contact</p>
+      
+        </div>
+        <div class="col-md-3 col-sm-3 col-6 mt-5">
+        
+          <p>BASIC LEVEL</p>
+          <p>COURSE NAME</p>
+          <p>ADVANCED LEVEL</p>
+          <p>LIVE STREAM</p>
+        </div>
+        <div class="col-md-3  col-sm-3 col-6 mt-5">
+            <h3 class="mt-2 logtext">CONTACT US</h3>
+            <p>CALICUT</p>
+            <p>HP TOWER,KOZHIKODE</p>
+            <p>britishacdy@gmail.com</p>
+        
+        </div>
+        <div class="col-md-3  col-sm-3 col-12 mt-5">
+            <h4 class="logtext">CONNECT WITH US</h4>
+            <div class="input-group mb-3">
+                
+                <input type="text" class="form-control" placeholder="9744551779"  aria-label="Recipient's username" aria-describedby="basic-addon2" disabled>
+                <div class="input-group-append">
+                  <button class="btn btn-info" type="button"><i class="fas fa-mobile-alt"></i></button>
+                </div>
+              </div>
+       
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer --> 
+  
+  <script type="text/javascript">
+  var i=0;
+  function read(){
+      if(!i){
+          document.getElementById("more").style.display="inline";
+          document.getElementById("dots").style.display="none";
+          document.getElementById("read").innerHTML="Read less";
+          i=1;
+      }
+      else{
+        document.getElementById("more").style.display="none";
+          document.getElementById("dots").style.display="inline";
+          document.getElementById("read").innerHTML="Read more";
+          i=0;
+  }
+  
+  }
+  </script>
+</body>
+</html>
